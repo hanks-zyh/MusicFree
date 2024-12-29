@@ -13,7 +13,7 @@ export default function Background() {
     return (
         <>
             <View style={style.background} />
-            <Image style={style.blur} blurRadius={50} source={source} />
+            <Image style={style.blur} blurRadius={100} source={source} />
         </>
     );
 }

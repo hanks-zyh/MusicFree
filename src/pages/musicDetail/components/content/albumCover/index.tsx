@@ -25,11 +25,13 @@ export default function AlbumCover(props: IProps) {
             return {
                 width: rpx(500),
                 height: rpx(500),
+                borderRadius: rpx(12),
             };
         } else {
             return {
                 width: rpx(260),
                 height: rpx(260),
+                borderRadius: rpx(8),
             };
         }
     }, [orientation]);

@@ -65,11 +65,11 @@ export default LyricItemComponent;
 
 const lyricStyles = StyleSheet.create({
     highlightItem: {
-        opacity: 1,
+        opacity: 0.98,
     },
     item: {
         color: 'white',
-        opacity: 0.6,
+        opacity: 0.2,
         paddingHorizontal: rpx(64),
         paddingVertical: rpx(24),
         width: '100%',
@@ -77,7 +77,7 @@ const lyricStyles = StyleSheet.create({
         textAlignVertical: 'center',
     },
     draggingItem: {
-        opacity: 0.9,
+        opacity: 0.8,
         color: 'white',
     },
 });

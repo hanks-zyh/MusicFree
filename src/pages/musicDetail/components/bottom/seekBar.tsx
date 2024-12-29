@@ -62,9 +62,22 @@ const style = StyleSheet.create({
         alignItems: 'center',
         flexDirection: 'row',
     },
+    thumb: {
+        width: 50,
+        height: 80,
+        backgroundColor: '#ff0000',
+        borderBottomRightRadius: 100,
+        borderTopRightRadius: 100,
+    },
+    track: {
+        height: 80,
+        borderBottomRightRadius: 20,
+        borderTopRightRadius: 20,
+    },
     slider: {
         width: '73%',
-        height: rpx(40),
+        height: rpx(90),
+        color: '#cccccc',
     },
     text: {
         fontSize: fontSizeConst.description,

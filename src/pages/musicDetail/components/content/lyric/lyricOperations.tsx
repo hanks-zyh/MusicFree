@@ -37,7 +37,7 @@ export default function LyricOperations(props: ILyricOperationsProps) {
             {orientation === 'vertical' ? <HeartIcon /> : null}
             <Icon
                 name="font-size"
-                size={iconSizeConst.normal}
+                size={iconSizeConst.light}
                 color="white"
                 onPress={() => {
                     showPanel('SetFontSize', {
@@ -51,7 +51,7 @@ export default function LyricOperations(props: ILyricOperationsProps) {
             />
             <Icon
                 name="arrows-left-right"
-                size={iconSizeConst.normal}
+                size={iconSizeConst.light}
                 color="white"
                 onPress={() => {
                     const currentMusicItem = TrackPlayer.getCurrentMusic();
@@ -74,7 +74,7 @@ export default function LyricOperations(props: ILyricOperationsProps) {
 
             <Icon
                 name="magnifying-glass"
-                size={iconSizeConst.normal}
+                size={iconSizeConst.light}
                 color="white"
                 onPress={() => {
                     const currentMusic = TrackPlayer.getCurrentMusic();
@@ -118,7 +118,7 @@ export default function LyricOperations(props: ILyricOperationsProps) {
             />
             <Icon
                 name="ellipsis-vertical"
-                size={iconSizeConst.normal}
+                size={iconSizeConst.light}
                 color={'white'}
                 onPress={() => {
                     const currentMusic = TrackPlayer.getCurrentMusic();
@@ -136,10 +136,13 @@ export default function LyricOperations(props: ILyricOperationsProps) {
 const styles = StyleSheet.create({
     container: {
         height: rpx(80),
-        marginBottom: rpx(24),
+        marginBottom: rpx(56),
         width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
+        paddingLeft: rpx(44),
+        paddingRight: rpx(38),
+        opacity: 0.6,
     },
 });

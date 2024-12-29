@@ -28,9 +28,10 @@ export default function () {
                         : null,
                 ]}>
                 <Icon
+                    style={{opacity: 0.8}}
                     color={'white'}
                     name={repeatModeConst[repeatMode].icon}
-                    size={rpx(56)}
+                    size={rpx(40)}
                     onPress={async () => {
                         InteractionManager.runAfterInteractions(async () => {
                             await sleep(20);
@@ -67,9 +68,10 @@ export default function () {
                     }}
                 />
                 <Icon
+                    style={{opacity: 0.8}}
                     color={'white'}
                     name={'playlist'}
-                    size={rpx(56)}
+                    size={rpx(40)}
                     onPress={() => {
                         showPanel('PlayList');
                     }}
@@ -82,7 +84,7 @@ export default function () {
 const style = StyleSheet.create({
     wrapper: {
         width: '100%',
-        marginTop: rpx(36),
+        marginTop: rpx(48),
         height: rpx(100),
         flexDirection: 'row',
         justifyContent: 'space-around',

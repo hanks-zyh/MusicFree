@@ -62,7 +62,7 @@ export default function Operations() {
             </Pressable>
             <Icon
                 name={isDownloaded ? 'check-circle-outline' : 'arrow-down-tray'}
-                size={iconSizeConst.normal}
+                size={iconSizeConst.small}
                 color="white"
                 onPress={() => {
                     if (musicItem && !isDownloaded) {
@@ -92,11 +92,11 @@ export default function Operations() {
                         },
                     });
                 }}>
-                <Image source={ImgAsset.rate[rate!]} style={styles.quality} />
+                <Image source={ImgAsset.rate[rate!]} style={styles.rate} />
             </Pressable>
             <Icon
                 name="chat-bubble-oval-left-ellipsis"
-                size={iconSizeConst.normal}
+                size={iconSizeConst.light}
                 color="white"
                 opacity={supportComment ? 1 : 0.2}
                 onPress={() => {
@@ -113,7 +113,7 @@ export default function Operations() {
             />
             <Icon
                 name="ellipsis-vertical"
-                size={iconSizeConst.normal}
+                size={iconSizeConst.light}
                 color="white"
                 onPress={() => {
                     if (musicItem) {
@@ -132,16 +132,23 @@ const styles = StyleSheet.create({
     wrapper: {
         width: '100%',
         height: rpx(80),
-        marginBottom: rpx(24),
+        marginBottom: rpx(56),
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-around',
+        justifyContent: 'space-between',
+        paddingLeft: rpx(44),
+        paddingRight: rpx(38),
+        opacity: 0.6,
     },
     horizontalWrapper: {
         marginBottom: 0,
     },
     quality: {
+        width: rpx(38),
+        height: rpx(38),
+    },
+    rate: {
         width: rpx(52),
-        height: rpx(52),
+        height: rpx(40),
     },
 });

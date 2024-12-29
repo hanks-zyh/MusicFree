@@ -12,7 +12,7 @@ export default function () {
     return isFavorite ? (
         <Icon
             name="heart"
-            size={iconSizeConst.normal}
+            size={iconSizeConst.light}
             color="red"
             onPress={() => {
                 if (!musicItem) {
@@ -24,7 +24,7 @@ export default function () {
     ) : (
         <Icon
             name="heart-outline"
-            size={iconSizeConst.normal}
+            size={iconSizeConst.light}
             color="white"
             onPress={() => {
                 if (musicItem) {

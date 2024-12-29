@@ -2,7 +2,7 @@ import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import rpx from '@/utils/rpx';
 import {useNavigation} from '@react-navigation/native';
-import Tag from '@/components/base/tag';
+// import Tag from '@/components/base/tag';
 import {fontSizeConst, fontWeightConst} from '@/constants/uiConst';
 import Share from 'react-native-share';
 import {B64Asset} from '@/constants/assetsConst';
@@ -29,7 +29,7 @@ export default function NavBar() {
                 <Text numberOfLines={1} style={styles.headerTitleText}>
                     {musicItem?.title ?? '无音乐'}
                 </Text>
-                <View style={styles.headerDesc}>
+                {/* <View style={styles.headerDesc}>
                     <Text style={styles.headerArtistText} numberOfLines={1}>
                         {musicItem?.artist}
                     </Text>
@@ -40,10 +40,10 @@ export default function NavBar() {
                             style={styles.tagText}
                         />
                     ) : null}
-                </View>
+                </View> */}
             </View>
             <IconButton
-                name="share"
+                name="ellipsis-vertical"
                 color="white"
                 sizeType="normal"
                 style={styles.button}
@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     button: {
-        marginHorizontal: rpx(24),
+        marginHorizontal: rpx(32),
     },
     headerContent: {
         flex: 1,
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: fontWeightConst.semibold,
         fontSize: fontSizeConst.title,
-        marginBottom: rpx(12),
+        // marginBottom: rpx(12),
         includeFontPadding: false,
     },
     headerDesc: {

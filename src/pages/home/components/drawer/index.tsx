@@ -198,6 +198,7 @@ function HomeDrawer(props: any) {
                     />
                     <ListItem.Content title={'退出应用'} />
                 </ListItem>
+                <View style={{marginBottom: rpx(100)}} />
             </DrawerContentScrollView>
         </>
     );
